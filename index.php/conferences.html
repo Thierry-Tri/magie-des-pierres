@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" >
+<head>
+<!--
+author: raduga http://mambasana.ru, http://joomlafabric.com
+copyright: GNU/GPL
+-->
+  <!--<base href="http://www.magie-des-pierres.ch/index.php/conferences" />-->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>conférences</title>
+  <link href="conferences-format=feed&type=rss.rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="conferences-format=feed&type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link href="http://www.magie-des-pierres.ch/templates/bizblue/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="http://www.magie-des-pierres.ch/modules/mod_ariextmenu/mod_ariextmenu/js/css/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="http://www.magie-des-pierres.ch/modules/mod_djimageslider/assets/style.css" type="text/css" />
+  <style type="text/css">/* Styles for DJ Image Slider with module id 83 */
+		#djslider-loader83 {
+			margin: 0 auto;
+			position: relative;
+			height: 170px; 
+			width: 643px;
+		}
+		#djslider83 {
+			margin: 0 auto;
+			position: relative;
+			height: 170px; 
+			width: 643px;
+			display: none;
+		}
+		#slider-container83 {
+			position: absolute;
+			overflow:hidden;
+			left: 0; 
+			top: 0;
+			height: 170px; 
+			width: 643px;			
+		}
+		#djslider83 ul#slider83 {
+			margin: 0 !important;
+			padding: 0 !important;
+			border: 0 !important;
+		}
+		#djslider83 ul#slider83 li {
+			list-style: none outside !important;
+			float: left;
+			margin: 0 !important;
+			border: 0 !important;
+			padding: 0 0px 0px 0 !important;
+			position: relative;
+			height: 170px;
+			width: 643px;
+			background: none;
+			overflow: hidden;
+		}
+		#slider83 li img {
+			width: 643px;
+			height: auto;
+			border: 0 !important;
+			margin: 0 !important;
+		}
+		#slider83 li a img, #slider83 li a:hover img {
+			border: 0 !important;
+		}
+		
+		/* Slide description area */
+		#slider83 .slide-desc {
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 643px;
+		}
+		#slider83 .slide-desc-in {
+			position: relative;
+		}
+		#slider83 .slide-desc-bg {
+			position:absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		#slider83 .slide-desc-text {
+			position: relative;
+		}
+		#slider83 .slide-desc-text h3 {
+			display: block !important;
+		}
+		
+		/* Navigation buttons */
+		#navigation83 {
+			position: relative;
+			top: 30px; 
+			margin: 0 5px;
+			text-align: center !important;
+		}
+		#prev83 {
+			cursor: pointer;
+			display: block;
+			position: absolute;
+			left: 0;
+			
+		}
+		#next83 {
+			cursor: pointer;
+			display: block;
+			position: absolute;
+			right: 0;
+			
+		}
+		#play83, 
+		#pause83 {
+			cursor: pointer;
+			display: block;
+			position: absolute;
+			left: 47%;
+			
+		}
+		#cust-navigation83 {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			z-index: 15;
+			display: none;
+		}
+		
+  </style>
+  <script src="http://www.magie-des-pierres.ch/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="http://www.magie-des-pierres.ch/media/system/js/core.js" type="text/javascript"></script>
+  <script src="http://www.magie-des-pierres.ch/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="http://www.magie-des-pierres.ch/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="http://www.magie-des-pierres.ch/modules/mod_ariextmenu/mod_ariextmenu/js/ext-core.js" type="text/javascript"></script>
+  <script src="http://www.magie-des-pierres.ch/modules/mod_ariextmenu/mod_ariextmenu/js/menu.min.js" type="text/javascript"></script>
+  <script src="http://www.magie-des-pierres.ch/modules/mod_djimageslider/assets/slider.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});function keepAlive() {	var myAjax = new Request({method: "get", url: "index.php"}).send();} window.addEvent("domready", function(){ keepAlive.periodical(840000); });(function($){ window.addEvent('domready',function(){var Slider83 = new DJImageSlider({id: '83', slider_type: 2, slide_size: 643, visible_slides: 1, show_buttons: 1, show_arrows: 1, preload: 800},{auto: 1, transition: Fx.Transitions.linear, duration: 600, delay: 3600})}); })(document.id);
+  </script>
+  <!--[if IE]><link rel="stylesheet" type="text/css" href="http://www.magie-des-pierres.ch/modules/mod_ariextmenu/mod_ariextmenu/js/css/menu.ie.min.css" /><![endif]-->
+  <style type="text/css">#ariextmenu_ariext77 A{ font-size: 11px !important; font-weight: normal !important; text-transform: none !important; }</style>
+  <script type="text/javascript">Ext.onReady(function() { new Ext.ux.Menu("ariextmenu_ariext77", {"direction":"vertical","transitionDuration":0.2}); Ext.get("ariextmenu_ariext77").select(".ux-menu-sub").removeClass("ux-menu-init-hidden"); });</script>
+
+<link rel="stylesheet" href="http://www.magie-des-pierres.ch/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="http://www.magie-des-pierres.ch/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="http://www.magie-des-pierres.ch/templates/bizblue/css/template.css" type="text/css" />
+
+</head>
+
+<body id="body_bg"><div align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-image:url('http://www.magie-des-pierres.ch/templates/bizblue/images/bgz.png');">
+  <tr>
+    <td align="center"><table width="910" border="0" align="center" cellpadding="0" cellspacing="0" >
+      <tr>
+        <td width="199" align="center" style="padding-left:25px;"><a href="http://magie-des-pierres.ch"><img src="http://www.magie-des-pierres.ch/templates/bizblue/images/logo.png" width="151" height="154" border="0" /></a></td>
+        <td width="705" colspan="2" align="left"  style="padding-right:53px;">  
+                                          	<table cellpadding="0" cellspacing="0" class="moduletable">
+			<tr>
+			<td>
+				
+	<div id="djslider-loader83" class="djslider-loader">
+    <div id="djslider83" class="djslider">
+        <div id="slider-container83" class="slider-container">
+        	<ul id="slider83">
+          		          			<li>
+            										<img src="http://www.magie-des-pierres.ch/images/sampledata/fruitshop/Copie%20de%20slide%20sale%20de%20soins%20copie.jpg" alt="Copie de slide sale de soins copie.jpg" />
+												
+												
+						
+					</li>
+                          			<li>
+            										<img src="http://www.magie-des-pierres.ch/images/sampledata/fruitshop/Copie%20de%20Slide%20show%20contre%20jour.jpg" alt="Copie de Slide show contre jour.jpg" />
+												
+												
+						
+					</li>
+                          			<li>
+            										<img src="http://www.magie-des-pierres.ch/images/sampledata/fruitshop/or%20et%20seau%20slide%20copie.jpg" alt="or et seau slide copie.jpg" />
+												
+												
+						
+					</li>
+                          			<li>
+            										<img src="http://www.magie-des-pierres.ch/images/sampledata/fruitshop/slide%20boudha%20copie.jpg" alt="slide boudha copie.jpg" />
+												
+												
+						
+					</li>
+                          			<li>
+            										<img src="http://www.magie-des-pierres.ch/images/sampledata/fruitshop/slide%20chaman%20copie.jpg" alt="slide chaman copie.jpg" />
+												
+												
+						
+					</li>
+                          			<li>
+            										<img src="http://www.magie-des-pierres.ch/images/sampledata/fruitshop/slide%20show%20laeti%20copie.jpg" alt="slide show laeti copie.jpg" />
+												
+												
+						
+					</li>
+                          			<li>
+            										<img src="http://www.magie-des-pierres.ch/images/sampledata/fruitshop/slide%20tipi%20copie.jpg" alt="slide tipi copie.jpg" />
+												
+												
+						
+					</li>
+                          			<li>
+            										<img src="http://www.magie-des-pierres.ch/images/sampledata/fruitshop/temple%20slide2%20copie.jpg" alt="temple slide2 copie.jpg" />
+												
+												
+						
+					</li>
+                        	</ul>
+        </div>
+        <div id="navigation83" class="navigation-container">
+        	<img id="prev83" class="prev-button" src="http://www.magie-des-pierres.ch/modules/mod_djimageslider/assets/prev.png" alt="Previous" />
+			<img id="next83" class="next-button" src="http://www.magie-des-pierres.ch/modules/mod_djimageslider/assets/next.png" alt="Next" />
+			<img id="play83" class="play-button" src="http://www.magie-des-pierres.ch/modules/mod_djimageslider/assets/play.png" alt="Play" />
+			<img id="pause83" class="pause-button" src="http://www.magie-des-pierres.ch/modules/mod_djimageslider/assets/pause.png" alt="Pause" />
+        </div>
+		<div id="cust-navigation83" class="navigation-container-custom">
+							<span class="load-button load-button-active"></span>
+							<span class="load-button"></span>
+							<span class="load-button"></span>
+							<span class="load-button"></span>
+							<span class="load-button"></span>
+							<span class="load-button"></span>
+							<span class="load-button"></span>
+							<span class="load-button"></span>
+			        </div>
+    </div>
+	</div>
+	
+	<div style="clear: both"></div>			</td>
+		</tr>
+		</table>
+	               <img src="http://www.magie-des-pierres.ch/templates/bizblue/images/px.gif" alt="" width="10" height="1" /></td>
+        </tr>
+    
+    </table></span>
+   </td>
+  </tr>
+</table>
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0" id="bodyz" >
+    <tr>
+      <td><table width="900" border="0" align="center" cellpadding="0" cellspacing="0" id="total">
+        <tr>
+          <td width="900" align="left" valign="top"><table width="900" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="left" valign="top"><table width="900" border="0" cellpadding="0" cellspacing="0" id="header">
+                <tr>
+                  <td width="233" align="left" valign="top"><table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><img src="http://www.magie-des-pierres.ch/templates/bizblue/images/haut_tableau.png" alt="" /></td>
+                    </tr>
+                  </table>
+                    </tr>
+                </table></td>
+              </tr>
+            <tr>
+              <td><table width="100%" border="0" cellpadding="0" cellspacing="0" id="mainbg">
+                <tr>
+                  <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="231" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="left">
+                            <tr>
+                              <td align="left" valign="top">
+                                  
+                                	<table cellpadding="0" cellspacing="0" class="moduletable">
+			<tr>
+			<th>
+				Menu principal			</th>
+		</tr>
+			<tr>
+			<td>
+				<!-- ARI Ext Menu Joomla! module. Copyright (c) 2009 ARI Soft, www.ari-soft.com -->
+
+	<ul id="ariextmenu_ariext77" class="ux-menu ux-menu-vertical">
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item435 ux-menu-item-parent-pos0"><a href="homepage.html" class="ux-menu-link-first ux-menu-link-parent">Accueil</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item466"><a href="../index.html" class="ux-menu-link-first">Accueil</a>
+						</li>
+					<li class=" ux-menu-item290"><a href="homepage/articles.html">Médias</a>
+						</li>
+					<li class=" ux-menu-item468"><a href="homepage/presentation1.html" class=" ux-menu-link-last">Présentation</a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item233 ux-menu-item-parent-pos1"><a href="login.html" class=" ux-menu-link-parent">Thérapie et soins</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item238"><a href="login/la-therapie-fondamentale.html" class="ux-menu-link-first">La thérapie fondamentale</a>
+						</li>
+					<li class=" ux-menu-item471"><a href="login/magnetisme-reboutage-massage.html">Magnétisme, reboutage, massage</a>
+						</li>
+					<li class=" ux-menu-item472"><a href="login/lithotherapie.html">Lithothérapie </a>
+						</li>
+					<li class=" ux-menu-item473"><a href="login/cures-de-soins-et-cures-de-repos.html" class=" ux-menu-link-last">Cures de soins et cures de repos</a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item448 ux-menu-item-parent-pos2"><a href="site-administrator.html" class=" ux-menu-link-parent">Développement personnel</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item474"><a href="site-administrator/eveil-et-developpement-personnel.html" class="ux-menu-link-first ux-menu-link-last">Eveil et développement personnel</a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item475 ux-menu-item-parent-pos3"><a href="chamanisme.html" class=" ux-menu-link-parent">Chamanisme</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item476"><a href="chamanisme/activites-chamaniques.html" class="ux-menu-link-first">Activités chamaniques</a>
+						</li>
+					<li class=" ux-menu-item477"><a href="chamanisme/sejours-en-tipi.html" class=" ux-menu-link-last">Séjours en tipi</a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item478 ux-menu-item-parent-pos4"><a href="habitat-sain.html" class=" ux-menu-link-parent">Habitat sain</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item479"><a href="habitat-sain/habitat-sain-et-nettoyage-energetique.html" class="ux-menu-link-first ux-menu-link-last">Habitat sain et nettoyage énergétique</a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item480 ux-menu-item-parent-pos5"><a href="cours-et-formations.html" class=" ux-menu-link-parent">Cours et formations</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item481"><a href="cours-et-formations/cours-et-formations.html" class="ux-menu-link-first">Cours et formations</a>
+						</li>
+					<li class=" ux-menu-item482"><a href="cours-et-formations/les-formations.html" class=" ux-menu-link-last">Les formations </a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item483 ux-menu-item-parent-pos6 current"><a href="conferences.html" class=" current ux-menu-link-parent">conférences</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item484"><a href="conferences/conferences-et-ateliers.html" class="ux-menu-link-first ux-menu-link-last">Conférences et ateliers </a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item485 ux-menu-item-parent-pos7"><a href="tarifs-dates.html" class=" ux-menu-link-parent">Tarifs, dates</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item486"><a href="tarifs-dates/tarifs-dates-et-condition-generales.html" class="ux-menu-link-first ux-menu-link-last">Tarifs, dates et condition générales</a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item487 ux-menu-item-parent-pos8"><a href="contact-et-acces.html" class=" ux-menu-link-parent">Contact et accès</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item488"><a href="contact-et-acces/contact.html" class="ux-menu-link-first">Contact</a>
+						</li>
+					<li class=" ux-menu-item489"><a href="contact-et-acces/acces.html" class=" ux-menu-link-last">Accès</a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item490 ux-menu-item-parent-pos9"><a href="boutique-en-ligne.html" class=" ux-menu-link-parent">Boutique en ligne</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item491"><a href="boutique-en-ligne/boutique-en-ligne.html" class="ux-menu-link-first ux-menu-link-last">Boutique en ligne</a>
+						</li>
+			</ul>
+			</li>
+					<li class="ux-menu-item-main ux-menu-item-parent ux-menu-item492 ux-menu-item-parent-pos10"><a href="liens.html" class=" ux-menu-link-parent">Liens</a>
+			
+	<ul class="ux-menu-sub ux-menu-init-hidden">
+					<li class=" ux-menu-item493"><a href="liens/liens.html" class="ux-menu-link-first ux-menu-link-last">Liens</a>
+						</li>
+			</ul>
+			</li>
+			</ul>
+			</td>
+		</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" class="moduletable">
+			<tr>
+			<th>
+				Identification			</th>
+		</tr>
+			<tr>
+			<td>
+				<form action="/index.php/conferences" method="post" id="login-form" >
+		<fieldset class="userdata">
+	<p id="form-login-username">
+		<label for="modlgn-username">Identifiant</label>
+		<input id="modlgn-username" type="text" name="username" class="inputbox"  size="18" />
+	</p>
+	<p id="form-login-password">
+		<label for="modlgn-passwd">Mot de passe</label>
+		<input id="modlgn-passwd" type="password" name="password" class="inputbox" size="18"  />
+	</p>
+		<p id="form-login-remember">
+		<label for="modlgn-remember">Se souvenir de moi</label>
+		<input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
+	</p>
+		<input type="submit" name="Submit" class="button" value="Connexion" />
+	<input type="hidden" name="option" value="com_users" />
+	<input type="hidden" name="task" value="user.login" />
+	<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD00ODM=" />
+	<input type="hidden" name="20c79f5b78281d56490e3c32b98d4235" value="1" />	</fieldset>
+	<ul>
+		<li>
+			<a href="identification-boutique-view=reset.html">
+			Mot de passe oublié ?</a>
+		</li>
+		<li>
+			<a href="identification-boutique-view=remind.html">
+			Identifiant oublié ?</a>
+		</li>
+			</ul>
+	</form>
+			</td>
+		</tr>
+		</table>
+	                                 </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        <tr>
+                          <td align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="leftbottom">
+                            <tr>
+                              <td align="left" valign="top">&nbsp; </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                      <td align="left" valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="left" valign="top"><table width="669"  border="0" cellpadding="0" cellspacing="0" id="topx">
+                            <tr>
+                              <td><table width="620" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td width="334" align="left" valign="top"><table width="100%"  border="0" cellpadding="0" cellspacing="0" id="user1">
+                                    <tr>
+                                      <td></td>
+                                      </tr>
+                                    </table></td>
+                                  <td width="335" align="left" valign="top">
+                                    <table width="100%"  border="0" cellpadding="0" cellspacing="0" id="user2">
+                                      <tr>
+                                        <td></td>
+                                        </tr>
+                                      </table></td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        <tr>
+                          <td align="left" valign="top"><table width="669" border="0" cellpadding="0" cellspacing="0" id="topbottom">
+                            <tr>
+                              <td width="669" align="left" valign="top">&nbsp;</td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        <tr>
+                          <td align="left" valign="top"><table width="669" border="0" cellpadding="0" cellspacing="0" id="main">
+                            <tr>
+                              <td width="669" align="left" valign="top"><br />
+                                                                <div class="blog">
+
+	
+
+
+
+
+
+
+<div class="items-leading">
+			<div class="leading-0">
+			
+
+
+
+
+
+<table style="width: 600px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center;" colspan="3"><img src="http://www.magie-des-pierres.ch/templates/bizblue/images/px.gif" border="0" width="1" height="15" /><span style="font-size: small;"><span style="font-family: Calibri;"><span style="color: red; line-height: 115%; font-family: 'Calibri','sans-serif'; font-size: 11pt; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; mso-fareast-language: EN-US; mso-ansi-language: FR-CH; mso-bidi-language: AR-SA;"><span style="color: red; line-height: 115%; font-family: 'Calibri','sans-serif'; font-size: 13.5pt; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: Tahoma; mso-fareast-language: EN-US; mso-ansi-language: FR-CH; mso-bidi-language: AR-SA;"><a href="https://newsletter.sharedbox.com/user/subscribe.php?sExternalid=a27d0fbe304b666c7a83f7707b2bc08f"><span style="color: red;">ATTENTION !!! Vous êtes nombreux à ne pas avoir reçu mon programme 2015…</span><span style="color: #0066cc;"> <br /></span><span style="line-height: 115%; font-size: 7.5pt;"><span style="color: #000000;">En raison des nouvelles lois sur les envois groupés seules les personnes inscrites à une newsletter peuvent être jointes légitimement.</span><br /></span><span style="color: red;">Merci donc de VOUS INSCRIRE à MA NEWSLETTER en cliquant sur ce texte,</span><span style="color: red; line-height: 115%; font-size: 11pt;"> <br /></span><span style="color: #000000;">afin de pouvoir recevoir mes informations à l’avenir !<span style="line-height: 115%; font-size: 11pt;"><br />  Très cordialement. Tri</span></span></a></span></span></span></span></td>
+</tr>
+<tr>
+<td bgcolor="#8ea8c4" width="2%"> </td>
+<td bgcolor="#8ea8c4" width="83%" height="25"><strong><span style="text-decoration: underline;">Conférences et ateliers</span></strong></td>
+<td bgcolor="#8ea8c4" width="15%"><a id="haut" name="haut"></a></td>
+</tr>
+<tr>
+<td colspan="3"><img src="http://www.magie-des-pierres.ch/templates/bizblue/images/px.gif" border="0" width="1" height="15" /></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 600px;" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="604">
+<p><img src="../dw_images/clip_image002_0010.jpg" border="0" alt="http://www.magie-des-pierres.ch/stages_clip_image002.jpg" hspace="12" width="122" height="92" align="right" />Cette page regroupe toutes les conférences et les ateliers de Thierry-Tri-Lederrey.<br />(Les activités telles que méditation sous terre et voyage chamanique sont sur la page chamanisme)</p>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 600px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="3"><img src="http://www.magie-des-pierres.ch/templates/bizblue/images/px.gif" border="0" width="1" height="15" /></td>
+</tr>
+<tr>
+<td bgcolor="#8ea8c4" width="2%"> </td>
+<td bgcolor="#8ea8c4" width="81%" height="25"><strong>Conférences et atelier actuellement programmés</strong></td>
+<td bgcolor="#8ea8c4" width="17%"><a id="haut2" name="Cours"></a><a href="conferences.html#haut">HAUT</a></td>
+</tr>
+<tr>
+<td colspan="3"><img src="http://www.magie-des-pierres.ch/templates/bizblue/images/px.gif" border="0" width="1" height="15" /></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 600px;" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="604">
+<p><strong><span style="text-decoration: underline;">Ateliers de voyage chamanique à Lausanne: ( voir page chamanisme)</span></strong></p>
+<p><strong><span style="text-decoration: underline;">Ateliers d'initiation au voyage chamanique: (voir page chamanisme)<br /></span></strong></p>
+<p><strong><span style="text-decoration: underline;"><br /></span></strong></p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"> </p>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 600px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="3"><img src="http://www.magie-des-pierres.ch/templates/bizblue/images/px.gif" border="0" width="1" height="15" /></td>
+</tr>
+<tr>
+<td bgcolor="#8ea8c4" width="2%"> </td>
+<td bgcolor="#8ea8c4" width="81%" height="25"><strong>Conférences et ateliers pouvant être programmés</strong></td>
+<td bgcolor="#8ea8c4" width="17%"><a id="haut3" name="Cours"></a><a href="conferences.html#haut">HAUT</a></td>
+</tr>
+<tr>
+<td colspan="3"><img src="http://www.magie-des-pierres.ch/templates/bizblue/images/px.gif" border="0" width="1" height="15" /></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 600px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p>Les conférences et ateliers suivant ne sont actuellement pas programmés mais peuvent être organisés sur demande pour des événements et manifestation publics ou privés, dans toute la Suisse romande et la France voisine.</p>
+<p><span style="text-decoration: underline;"><strong>Thérapie fondamentale et développement personnel </strong></span>(Conférence)<br />Qu’il s’agisse d’éveil ou de santé, la Thérapie fondamentale est une approche qui permet de travailler simultanément sur les plans énergétique et psychique, et c’est là sa grande force, car c’est toujours dans le psychisme que se trouve la clef.</p>
+<p><strong><span style="text-decoration: underline;">L'importance de "l'enfant intérieur" dans les thérapies et le développement personnel.</span></strong><br />Les causes profondes de la maladie ou du "mal être" se trouvent dans le psychisme. La reconnexion à son "enfant intérieur" représente la clef fondamentale de toute guérison, ainsi qu'une base solide pour un développement personnel rapide et efficace</p>
+<p><strong><span style="text-decoration: underline;">Corps physique, corps énergétique et esprit, les clefs de la guérison.</span></strong><br />A travers la médecine énergétique, il nous est offert de redécouvrir notre dimension spirituelle.<br />En redonnant vie à "l'enfant intérieur, nous retrouvons notre potentiel de guérison.<br />"Toutes les souffrances de l'homme trouvent leurs racines dans l'ignorance de sa dimension spirituelle ! " (Buddha) <br />Une deuxième conférence peut être commandée pour vos animations de centre de santé, de librairie, ou de réunion. (Renseignements sur demande.)</p>
+<p><strong><span style="text-decoration: underline;">La magie des pierres</span></strong><br />Les pierres, merveilleuses émanations de la nature, sont porteuses d’une vibration énergétique subtile. Au-delà, des vastes possibilités thérapeutiques qu’elles offrent en débloquant nos problèmes physiques tant que psychologique ou psychosomatique, les pierres sont d’une aide remarquable pour nous accompagner dans l’éveil de notre propre spiritualité.<br />Tout au long de notre chemin de lumière, les pierres, dont le cristal de roche, peuvent nous aider à relever notre propre niveau vibratoire vers des plans de conscience plus élevés, en nous reconnectant à notre dimension intérieure et aux plans spirituel et divin de l’être.<br />De manière active ou passive, les pierres sont un pont entre le monde de la matière et le monde de l’énergie, et donc, de l’esprit.</p>
+<p><strong><span style="text-decoration: underline;">Voyage guidé au cœur de l'esprit</span></strong><strong>.</strong> (Atelier d’une heure trente)<br />Dans le chamanisme nous parlons souvent d'esprits. Esprits de la nature, esprits guides etc.… Mais qu'en est-il de l'esprit que nous sommes ?  Cet atelier vous propose d'expérimenter l'unité de votre esprit, de vous «ressentir" esprit.  Après une purification et un équilibrage énergétique, vous serez guidé dans une plongée au cœur de votre univers intérieur, pour expérimenter cet état de conscience particulier où nous sommes "pure conscience", au-delà du corps et de la matière.</p>
+<p><strong><span style="text-decoration: underline;">Comment s'affranchir des limitations du mental. </span></strong><br />Avec ses certitudes, ses doutes et ses peurs, le mental constitue souvent un obstacle à la spiritualité et à l'évolution de notre conscience. Si, dans le trio "corps-mental-esprit", nous sommes l'esprit, qu'est-ce donc que le mental, quel est son rôle et pourquoi nous empêche-t-il d'évoluer sereinement ? Comment s'affranchir des limitations du mental pour qu'il nous laisse libre d’avancer sur notre chemin de lumière ?</p>
+<p><span style="text-decoration: underline;"><strong>Comprendre la maladie est la clef indispensable de la guérison<br /></strong></span>La maladie, qu'elle soit physique ou psychique, est un signal d'alarme de notre "être intérieur", étouffé par le dictat du mental. En lui redonnant sa place, nous répondons ainsi à sa demande. Il relâche alors la sonnette d'alarme et la maladie peut alors disparaître, n'ayant plus de raisons d'être. C'est une solution simple et radicale car elle permet ainsi de traiter véritablement le problème à sa source. De plus, cela vous permettra de vous retrouver, et de vous libérer des schémas du passé.</p>
+<p class="MsoNormal" style="margin: 0cm 0cm 10pt;"><strong style="mso-bidi-font-weight: normal;"><span style="text-decoration: underline;"><span style="color: black; line-height: 115%; font-family: 'Verdana','sans-serif'; font-size: 7.5pt; mso-bidi-font-family: Tahoma;">Se réaliser spirituellement ! Il est temps de passer de la théorie à la réalité!</span></span></strong><span style="color: black; line-height: 115%; font-family: 'Verdana','sans-serif'; font-size: 7.5pt; mso-bidi-font-family: Tahoma;"><br /> Il y a une grande différence entre « comprendre » et « réaliser » (rendre réel). La compréhension intellectuelle d’un concept ou d’une philosophie spirituelle est le premier pas de chaque étape de notre évolution de conscience, mais seule une compréhension émotionnelle (par le vécu) peut nous permettre de passer de la théorie à la réalité, de la compréhension à la réalisation.</span><br /><br /><span style="color: #000000;"><strong style="mso-bidi-font-weight: normal;"><span style="text-decoration: underline;"><span style="line-height: 115%; font-family: 'Verdana','sans-serif'; font-size: 7.5pt; mso-ansi-language: FR-CH;" lang="FR-CH">Atelier voyage chamanique<br /></span></span></strong><span style="line-height: 115%; font-family: 'Verdana','sans-serif'; font-size: 7.5pt; mso-ansi-language: FR-CH;" lang="FR-CH">Venez connecter ou reconnecter votre dimension spirituelle et renforcez votre lien de filiation mystique à la Terre-Mère, au Père-Ciel et au Grand Esprit. Préparez-vous à recevoir, et à vous laisser guider<span style="mso-spacerun: yes;">  </span>par la magie de l'esprit, dans ce voyage comme dans la vie.</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div id="_mcePaste" class="mcePaste" style="position: absolute; width: 1px; height: 1px; overflow: hidden; top: 0px; left: -10000px;"> </div>
+
+
+<div class="item-separator"></div>
+		</div>
+			</div>
+
+
+
+	
+
+</div>
+
+                                                                   </td>
+                              </tr>
+                            <tr>
+                              <td align="left" valign="top" style="text-align:right;"></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            <tr>
+              <td align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" id="mainbottom">
+                <tr>
+                  <td align="left" valign="top">
+                    
+                    </td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+
+</html>
